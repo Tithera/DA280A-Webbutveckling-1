@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="sv">
+
+    <head>
+    	
+    	<!-- Meta informationen som inte syns på hemsidan -->
+    	<link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+    	<link rel="stylesheet" href="style.css" type="text/css">
+    
+        <meta charset="utf-8">
+        <title>Startsida</title>
+        
+    </head>
+    
+    <body>
+    
+    	<!-- Headern med en h1 och lite info -->
+    	<header>
+        
+        	<h1>Min webbsida</h1>
+        	
+            <p>Inlämningsuppgift 5 <br>
+            Therese Sturesson <br>
+            ai5157</p>
+        
+        </header>
+        
+        <!-- Navigationen där alla sidor syns -->
+        <nav>
+        
+        	<a href="startsida.html">Startsida</a>
+            <a href="omMig.html">Om mig</a>
+            <a href="omCSS.html">Om CSS</a>
+            <a href="ovrigt.html">Övrigt</a>
+        
+        </nav>
+        
+        
+        <section>
+        
+        	<!-- En div med en h2 och lite info (p) -->
+        	<div class="startsidaDiv">
+            
+                <h2>Skillnaden mellan inline CSS och extern stilmall</h2>
+                
+                <p>Det finns flera olika sätt att styla ett HTML dokument, bland annat inline style och extern stilmall. </p>
+    
+                <p>Inline style är när man sätter ett style element på varje html tagg man vill styla. Inom de style elementen 
+                skriver man den CSS kod men vill styla HTML koden med. Man kan skriva hur många attribut man vill inom style 
+                elementet, det finns ingen begränsning. </p>
+                
+                <p>Fördelen med inline style är att man kan vara väldigt specifik för vilket HTML tagg man vill styla. Den är 
+                också bra att använda när man ska stylar med Javasqript som ofta använder inline style. Nackdelen med inline 
+                style är att det lätt kan bli rörigt att ha CSS kod och HTML kod tillsammans i samma dokument och det kan bli 
+                krångligt att ändra i efterhand. Äldre webbläsare kan till och med tolka CSS koden som html kod och därav visa 
+                upp det direkt på webbsidan. </p>
+                
+                <p>Med external style sheet så har man ett separat CSS dokument där man stylar ẃebbsidan. Det betyder att i alla 
+                html dokument har man ett link element i head taggen där man länkar till CSS dokumentet (alla sidor länkar till 
+                samma dokument). Det betyder att all styling för alla HTML sidor hamnar i samma dokument. </p>
+                
+                <p>Fördelen med en extern stilmall är att man samlar all styling på samma ställe vilket gör det enkelt att 
+                återanvända CSS klasser till alla html dokument som är kopplade till CSS dokumentet. Det blir också renare och 
+                snyggare att separera HTML kod och CSS kod. Nackdelen med en extern stilmall är att om man stylar alla HTML sidor 
+                i samma css dokument kan det dokumentet bli väldigt långt och rörigt. </p>
+                
+
+			</div>
+            
+            <!-- En article med en form -->
+            <article>
+            	
+                <h3>Nyhetsbrev</h3>
+                
+                <form>
+                	<p>Namn: <input type="text" placeholder="Name" name="name" required></p>
+                    <p>Email: <input type="text" placeholder="Email address" name="mail" required></p>
+                	<input type="submit" value="Subscribe">
+                </form>
+            
+            </article>
+        
+        </section>
+        
+        <!-- En footer med info om när sidan är senast uppdaterad -->
+        <footer>
+        	<p>Senast uppdaterat: 2018-03-26</p>
+        </footer>
+        
+    </body>
+
+</html>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Stylar table, tablehead och tabledata så att den får linjer runt allt */
+table, th, td {
+    border: 1px solid black;
+}
+
+
+/* Stylar tablehead och tabledata så att man får lite utrymme runt texten och att testen hamnar i centrum */
+th, td {
+    text-align: center;
+	padding: 10px;
+}
+
+
+/* Stylar bakgrundsfärgen på tableheading så att den blir grå */
+th {
+	background-color:#BDBDBD;	
+}
+
